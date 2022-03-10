@@ -2,10 +2,12 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 body {
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 .logo {
@@ -20,7 +22,6 @@ body {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   border-top: 0.1875rem solid var(--primary-dark);
-
 }
 
 nav a.nav-link {
@@ -41,6 +42,48 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 .navbar-nav > li > a:hover {
-	border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-orange);
+}
 
+.header-wraper {
+  position: relative;
+  /* background: url(digital-marketing-background-web-development-web-design-web-developer-web-presence-web-development-tools-web-application-search-engine-optimization-png-clipart.jpg) */
+    /* no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  /* width: 222vh; */
+}
+.main-info {
+  display: flex;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+.main-info h1 {
+  /* color: var(--primary-orange); */
+  color: rgb(226, 91, 28);
+  /* color:rgb(165, 167, 238); */
+  text-transform: uppercase;
+  padding: 10px;
+}
+.typed-text {
+  /* color: var(--primary-white); */
+  font-size: 2rem;
+}
+.btn-main-offer {
+  /* border: 1px solid var(--primary-red); */
+  text-transform: uppercase;
+  border-radius: 0;
+  /* padding: 0.75rem; */
+  color: var(--primary-red);
+  margin: 2rem;
+  font-size: 1rem;
 }
