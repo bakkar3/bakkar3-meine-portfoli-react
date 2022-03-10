@@ -35,10 +35,10 @@ const Particles = () => {
             },
             modes: {
               bubble: {
-                distance: 400,
+                distance: 40,
                 duration: 2,
                 opacity: 0.8,
-                size: 40,
+                size: 400,
               },
               push: {
                 quantity: 4,

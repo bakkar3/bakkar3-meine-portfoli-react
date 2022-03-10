@@ -9,7 +9,9 @@
 body {
   font-family: "Roboto Condesed", sans-serif;
 }
-
+nav {
+  z-index: 2;
+}
 .logo {
   width: 9.25rem;
 }
@@ -37,6 +39,11 @@ nav ul li {
   padding: 0 !important;
   height: 6rem !important;
 }
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
@@ -46,15 +53,18 @@ nav ul li {
 }
 
 .header-wraper {
+  /* z-index:2; */
   position: relative;
   /* background: url(digital-marketing-background-web-development-web-design-web-developer-web-presence-web-development-tools-web-application-search-engine-optimization-png-clipart.jpg) */
-    /* no-repeat; */
+  /* no-repeat; */
   background-size: cover;
   background-position: center;
   height: 110vh;
   /* width: 222vh; */
 }
 .main-info {
+  z-index: 1;
+
   display: flex;
   /* position: absolute;
   top: 0;
@@ -69,11 +79,19 @@ nav ul li {
 
 .main-info h1 {
   /* color: var(--primary-orange); */
-  color: rgb(226, 91, 28);
-  /* color:rgb(165, 167, 238); */
+  color: rgb(160, 72, 32);
   text-transform: uppercase;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
 .typed-text {
   /* color: var(--primary-white); */
   font-size: 2rem;
@@ -82,8 +100,13 @@ nav ul li {
   /* border: 1px solid var(--primary-red); */
   text-transform: uppercase;
   border-radius: 0;
-  /* padding: 0.75rem; */
+  padding: 0.75rem;
   color: var(--primary-red);
   margin: 2rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+}
+.btn-main-offer:hover {
+  /* background-color: var(--primary-hover-red); */
+  text-decoration: none;
+  color: var(--primary-white);
 }
